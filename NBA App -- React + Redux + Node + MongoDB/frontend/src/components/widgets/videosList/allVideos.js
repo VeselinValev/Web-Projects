@@ -1,23 +1,22 @@
 import React, {Component} from 'react';
-import NewsSlider from "../newsSlider/slider";
 import axios from 'axios';
 import { URL } from '../../../config/config'
-import NewsTemplate from "./newsTemplate";
-import styles from './newsList.module.css';
+import styles from "../newsList/newsList.module.css";
+import NewsSlider from "../newsSlider/slider";
+import VideosListTemplate from "./videosListTemplate";
 
-class AllNews extends Component {
+class AllVideos extends Component {
 
     state = {
-        articles: [],
+        videos: [],
         teams: JSON.parse(sessionStorage.getItem('teams'))
     };
 
     componentWillMount(){
-        axios.get(`${URL}/articles`).then(response => {
-            this.setState({articles:response.data});
+        axios.get(`${URL}/videos`).then(response => {
+            this.setState({videos:response.data});
         })
     }
-
     render() {
         return (
             <div className={styles.newsWrapper}>
@@ -25,10 +24,10 @@ class AllNews extends Component {
                     type='featured'
                     start={0}
                     amount={3}/>
-                <NewsTemplate data={this.state.articles} teams={this.state.teams}/>
+                <VideosListTemplate data={this.state.videos} teams={this.state.teams}/>
             </div>
         );
     }
 }
 
-export default AllNews;
+export default AllVideos;

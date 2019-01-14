@@ -27,3 +27,7 @@
     opacity: 1;
     transform: translateX(0);
 }
+
+.newsWrapper a{
+    text-decoration: none;
+}

@@ -1,15 +1,15 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Link} from "react-router-dom";
 import styles from "../videosList/videosList.module.css";
 import CardInfo from "../cardInfo/cardInfo";
 
-const NewsTemplate = () => {
+const NewsTemplate = (props) => {
     return props.data.map((item, i) => {
-        return <Link to={`/videos/${item.id}`} key={i}>
+        return <Link to={`/articles/${item.id}`} key={i}>
             <div className={styles.videosListItem_wrapper}>
-                <div className={styles.left}
+                <div className={styles.image}
                      style={{
-                         background: `url(/images/videos/${item.image})`
+                         background: `url(/images/articles/${item.image})`
                      }}>
                     <div></div>
                 </div>
