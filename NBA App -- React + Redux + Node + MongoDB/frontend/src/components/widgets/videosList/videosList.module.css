@@ -4,6 +4,11 @@
     color: #353535;
     font-weight: 300;
     font-size: 21px;
+
+}
+
+.videosList_wrapper a, .relatedWrapper a{
+    text-decoration: none;
 }
 
 .videosListItem_wrapper {
@@ -15,6 +20,7 @@
 .videosListItem_wrapper h2{
     font-size: 13px;
     color: #525252;
+
 }
 
 .left {
@@ -28,4 +34,13 @@
     background-repeat: no-repeat !important;
     background-position: center center !important;
     background: url('/images/play.png');
+}
+
+.right {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.relatedWrapper {
+    margin: 0 5px;
 }

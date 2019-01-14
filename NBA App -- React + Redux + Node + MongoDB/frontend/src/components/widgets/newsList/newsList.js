@@ -13,7 +13,7 @@ class NewsList extends Component {
         start: this.props.start,
         end: this.props.start + this.props.amount,
         amount: this.props.amount,
-        teams: []
+        teams: JSON.parse(sessionStorage.getItem('teams'))
     };
 
     componentWillMount() {
@@ -21,19 +21,13 @@ class NewsList extends Component {
     }
 
     request = (start, end) => {
-        if (this.state.teams.length < 1) {
-            axios.get(`${URL}/teams`).then(response => {
-                this.setState({
-                    teams: response.data
-                })
-            })
-        }
         axios.get(`${URL}/articles?_start=${start}&_end=${end}`)
             .then(response => {
                 this.setState({
-                    items: [...this.state.items, ...response.data]
+                    items: [...this.state.items, ...response.data],
+                    start,
+                    end
                 });
-
             })
     };
 

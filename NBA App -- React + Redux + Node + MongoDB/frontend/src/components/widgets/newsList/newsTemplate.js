@@ -1,10 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styles from './videosList.module.css';
+import React, {Component} from 'react';
+import {Link} from "react-router-dom";
+import styles from "../videosList/videosList.module.css";
 import CardInfo from "../cardInfo/cardInfo";
 
-const VideosListTemplate = (props) => {
-
+const NewsTemplate = () => {
     return props.data.map((item, i) => {
         return <Link to={`/videos/${item.id}`} key={i}>
             <div className={styles.videosListItem_wrapper}>
@@ -21,6 +20,6 @@ const VideosListTemplate = (props) => {
             </div>
         </Link>
     })
-};
+}
 
-export default VideosListTemplate;
+export default NewsTemplate;

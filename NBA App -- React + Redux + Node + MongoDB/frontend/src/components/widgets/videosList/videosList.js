@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import styles from './videosList.module.css';
-
 import { URL } from '../../../config/config'
 import Button from "../buttons/buttons";
 import VideosListTemplate from "./videosListTemplate";
@@ -9,7 +8,7 @@ import VideosListTemplate from "./videosListTemplate";
 class VideosList extends Component {
 
     state = {
-        teams: [],
+        teams: JSON.parse(sessionStorage.getItem('teams')),
         videos: [],
         start: this.props.start,
         amount: this.props.amount,
@@ -29,6 +28,7 @@ class VideosList extends Component {
     }
 
     renderTitle(){
+
         return this.props.title ? <h3><strong>NBA</strong> Videos</h3> : null;
     }
 
@@ -37,28 +37,28 @@ class VideosList extends Component {
     }
 
     request = (start, end) => {
-        if (this.state.teams.length < 1) {
-            axios.get(`${URL}/teams`).then(response => {
-                this.setState({
-                    teams: response.data
-                })
-            })
-        }
         axios.get(`${URL}/videos?_start=${start}&_end=${end}`)
             .then(response => {
                 this.setState({
-                    videos: [...this.state.videos, ...response.data]
+                    videos: [...this.state.videos, ...response.data],
+                    start,
+                    end
                 });
 
             })
     };
+
+    loadMore(){
+        let end = this.state.end + this.state.amount;
+        this.request(this.state.end, end);
+    }
 
     render() {
         return (
             <div className={styles.videosList_wrapper}>
                 {this.renderTitle()}
                 {this.renderVideos()}
-                <Button type='link' cta='More Videos'/>
+                <Button type='loadmore' cta='Load More Videos' loadMore={() => this.loadMore()}/>
             </div>
         );
     }
