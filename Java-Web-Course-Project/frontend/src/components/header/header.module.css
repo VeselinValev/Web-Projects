@@ -88,6 +88,12 @@
     z-index: 100;
 }
 
+.active {
+    color: rgba(0, 60, 179, 0.8);
+    opacity: .85;
+    border: rgba(255, 255, 255, 0.8);
+}
+
 .navbarRight a{
     height: 7.5rem;
     font-size: 1.5rem;
