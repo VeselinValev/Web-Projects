@@ -1,0 +1,136 @@
+.headerBackground {
+    background-image: linear-gradient(to top left, rgba(230, 238, 255, 0.7), rgba(230, 238, 255, 0.7)), url("../../img/background-header.jpg");
+    background-size: cover;
+    height: 100vh;
+    filter: blur(3px);
+    z-index: 1;
+    position: relative;
+}
+
+.navbarWrapper{
+    height: 7.5rem;
+    width: 120%;
+    z-index: 100;
+    left: 0;
+    top: 1rem;
+    transition: all;
+    position: fixed;
+    max-height: 7.5rem;
+}
+
+.navbarLeft {
+    height: 7.5rem;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 30%;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 90.7% 100%, 0% 100%);
+    animation: moveInLeft 0.7s ease-out;
+    text-align: center;
+    vertical-align: top;
+
+}
+
+.navbarRight{
+    height: 7.5rem;
+    display: inline-block;
+    background-color: rgba(0, 60, 179, 0.5);
+    width: 70%;
+    -webkit-clip-path: polygon(4% 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(4% 0, 100% 0%, 100% 100%, 0% 100%);
+    margin-left: -4rem;
+    animation: moveInRight 0.7s ease-out;
+    vertical-align: top;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-100rem);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(100rem);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.btn {
+    display: inline-block;
+    height: 7.5rem;
+    width: 10rem;
+    color: #eee;
+    border: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    vertical-align: center;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+    background-size: 250%;
+    transition: all .4s;
+    z-index: 5;
+    backface-visibility: hidden;
+}
+
+.btn:hover{
+    color: rgba(0, 60, 179, 0.8);
+    opacity: .85;
+    border: rgba(255, 255, 255, 0.8);
+    background-position: 100%;
+    transform: translateY(-3px) scale(1.1);
+    z-index: 100;
+}
+
+.navbarRight a{
+    height: 7.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.navbarRight a:first-child {
+    margin-left: 10rem;
+}
+
+.textPrimary {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 0.5rem;
+}
+
+.textSecondary {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.link {
+    color: rgba(0, 60, 179, 0.5);
+    text-decoration: none;
+}
+
+.navbarLeft h4 {
+    padding-right: 3rem;
+}
+
+.navbarRight h4 {
+    padding-top: 3rem;
+}
+
+.navbarRight > a div {
+
+}
+
+
+

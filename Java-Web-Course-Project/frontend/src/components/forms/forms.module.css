@@ -1,0 +1,103 @@
+
+form {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 45rem;
+    width: 60rem;
+    background-color: rgba(0, 60, 179, 0.5);
+    margin-top: 6rem;
+    text-align: center;
+    box-shadow: 0 1.5rem 4rem black;
+    color: #eee;
+    z-index: 6;
+    animation: appear .7s ease-in;
+
+}
+
+.field {
+    padding-bottom: 1.5rem;
+}
+
+.textSecondary {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.form input, .loginForm input {
+    height: 3rem;
+    width: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    transition: all .5s ease-in;
+}
+
+.form input:hover, .loginForm input:hover {
+    transform: translateY(3px) scale(1.2);
+    background-color: rgba(255, 255, 255, 0.8) ;
+}
+
+.textPrimary {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 1rem;
+    height: 5rem;
+    padding-top: 1rem;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+input[type=submit] {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    width: 50%;
+    height: 4rem;
+    background-color: rgba(0, 26, 77, .6);
+    cursor: pointer;
+    color: #eeeeee;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    transition: all .2s ease-in;
+    border: 0px;
+}
+
+input[type=submit]:hover {
+    transform: translateY(-3px);
+}
+
+input[type=submit]:active {
+    transform: translateY(-1px);
+    border: 0px;
+}
+
+form a {
+    height: 7.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.forgottenPass {
+    margin-top: 2rem;
+    color: #eeeeee;
+    text-transform: uppercase;
+}
+
+.loginForm input[type=submit] {
+    margin-top: 15rem;
+}

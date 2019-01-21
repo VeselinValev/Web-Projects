@@ -1,0 +1,81 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.headerBackground {
+    background-image: url("../img/background-header.jpg");
+    background-size: cover;
+    height: 100vh;
+    filter: blur(3px) brightness(30%);
+    z-index: 1;
+}
+
+.navbarWrapper{
+    height: 7.5rem;
+    width: 120%;
+    z-index: 2;
+    left: 0;
+    top: 1rem;
+    transition: all 0.5s ease-in;
+    position: fixed;
+}
+
+.navbarLeft {
+    height: 7.5rem;
+    display: inline-block;
+    background-color: white;
+    opacity: 0.8;
+    width: 30%;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 90.7% 100%, 0% 100%);
+    animation: moveInLeft .5s ease-in;
+
+}
+
+.navbarRight{
+    height: 7.5rem;
+    display: inline-block;
+    background-color: white;
+    opacity: 0.3;
+    width: 70%;
+    -webkit-clip-path: polygon(4% 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(4% 0, 100% 0%, 100% 100%, 0% 100%);
+    margin-left: -4rem;
+    z-index: 2;
+    animation: moveInRight .5s ease-in;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-100rem);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(100rem);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.btn {
+}
