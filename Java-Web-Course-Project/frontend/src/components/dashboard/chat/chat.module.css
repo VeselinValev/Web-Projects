@@ -1,0 +1,66 @@
+.chat {
+    position: absolute;
+    left: 1.5%;
+    top: 43.8%;
+    height: 34rem;
+    width: 38rem;
+    z-index: 2;
+    animation: appear .3s ease-in;
+    border-radius: 0px 0px 0px 10px;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #777777;
+    background-color: #aecafa;
+}
+
+.chat h2{
+
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.chatWindow{
+    display: inline-block;
+    width: 90%;
+    height: 80%;
+    border-radius: 1rem;
+    border: 5px solid #fffeeb;
+    background-color: #fffeeb;
+}
+
+.chat input {
+    height: 3rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 1rem;
+    width: 70%;
+}
+.chat button {
+    height: 4rem;
+    border-radius: 1rem;
+    width: 6rem;
+    background-color: #ff6a69;
+    margin-left: 1rem;
+    border: none;
+    color: white;
+}
+.chat input:focus {
+    outline: none;
+    text-overflow: ellipsis;
+}
+
+.chat button:focus {
+    outline: none;
+}
+
+.chat button:hover {
+    box-shadow: 0 .5rem 2rem rgba(0,0,0, 0.6);
+}

@@ -1,0 +1,25 @@
+.platform {
+    position: absolute;
+    left: 30%;
+    top: 18%;
+    height: 80vh;
+    width: 92.7rem;
+    z-index: 2;
+    animation: appear .3s ease-in;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #aecafa;
+    /*background-image: linear-gradient(to right, #b4b9cf, #e4e4e4);*/
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+

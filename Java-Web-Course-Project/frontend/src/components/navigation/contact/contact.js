@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import styles from './content.module.css';
+import styles from './contact.module.css';
 import FontAwesome from 'react-fontawesome';
 
-class ContactContent extends Component {
+class Contact extends Component {
     render() {
         return (
             <div>
@@ -26,4 +26,4 @@ class ContactContent extends Component {
     }
 }
 
-export default ContactContent;
+export default Contact;

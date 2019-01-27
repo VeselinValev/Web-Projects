@@ -1,28 +1,28 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
-import Home from "./hoc/home";
-import Register from "./hoc/register";
-import Login from "./hoc/login";
-import LoggedIn from "./hoc/loggedIn";
-import About from "./hoc/about";
-import Support from "./hoc/support";
-import Contact from "./hoc/contact";
-import Careers from "./hoc/careers";
+import Layout from "./hoc/layout";
+import Home from "./components/home/home";
+import RegisterForm from "./components/navigation/forms/register";
+import LoginForm from "./components/navigation/forms/login";
+import Support from "./components/navigation/support/support";
+import About from "./components/navigation/about/about";
+import Contact from "./components/navigation/contact/contact";
+import Careers from "./components/navigation/careers/careers";
+import Dashboard from "./hoc/dashboard";
 
 
 const Routes = () => {
     return (
-        <Switch>
+        <div>
             <Route exact path="/" component={Home}/>
-            <Route exact path="/home" component={Home}/>
-            <Route exact path="/register" component={Register}/>
-            <Route exact path="/login" component={Login}/>
+            <Route exact path="/register" component={RegisterForm}/>
+            <Route exact path="/login" component={LoginForm}/>
             <Route exact path="/support" component={Support}/>
             <Route exact path="/about" component={About}/>
-            <Route exact path="/loggedIn" component={LoggedIn}/>
             <Route exact path="/contact" component={Contact}/>
             <Route exact path="/careers" component={Careers}/>
-        </Switch>
+            <Route path="/dashboard" component={Dashboard}/>
+        </div>
     )
 };
 

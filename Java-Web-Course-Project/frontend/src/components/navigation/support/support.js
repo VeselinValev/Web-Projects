@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class SupportContent extends Component {
+class Support extends Component {
     render() {
         return (
             <div>
@@ -10,4 +10,4 @@ class SupportContent extends Component {
     }
 }
 
-export default SupportContent;
+export default Support;

@@ -4,8 +4,9 @@
     top: 20%;
     left: 50%;
     transform: translate(-50% -50%);
-    animation: moveInRight 1s ease-in;
-    box-shadow: 0 1.5rem 4rem black;
+    animation: appear .3s ease-in;
+    border: 5px solid rgba(66, 134, 244, 0.6);
+    border-radius: 10px;
 }
 
 .infoBox {
@@ -18,11 +19,12 @@
     width: 40rem;
     text-align: center;
     font-size: 1.2rem;
-    color: rgba(0, 60, 179, 0.7);
-    animation: moveInLeft 1s ease-in;
-    background-color: rgba(255, 255, 255, 0.2);
+    color: #777777;
+    animation: moveInLeft .3s ease-in;
+    background-color: transparent;
     padding-top: 2rem;
-    box-shadow: 0 1.5rem 4rem black;
+    border: 5px solid rgba(66, 134, 244, 0.6);
+    border-radius: 10px;
 }
 
 .infoBox h2{
@@ -46,14 +48,24 @@
     }
 }
 
-@keyframes moveInRight {
+@keyframes appear {
     0% {
-        transform: translateX(100rem);
         opacity: 0;
     }
 
     100% {
-        transform: translate(0);
         opacity: 1;
     }
 }
+
+/*@keyframes moveInRight {*/
+    /*0% {*/
+        /*transform: translateX(100rem);*/
+        /*opacity: 0;*/
+    /*}*/
+
+    /*100% {*/
+        /*transform: translate(0);*/
+        /*opacity: 1;*/
+    /*}*/
+/*}*/

@@ -20,7 +20,7 @@ class LoginForm extends Component {
                             <input type="password"/>
                         </div>
                     </label>
-                    <input type="submit" value="Login"/>
+                    <input type="submit" value="Sign in"/>
                     <Link to='/recovery'>
                         <h4 className={styles.forgottenPass}>Forgotten password</h4>
                     </Link>
