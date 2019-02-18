@@ -1,12 +1,3 @@
-.headerBackground {
-    /*background-image:  url("../../img/background2.jpg");*/
-    background-color: #e4e4ff;
-    background-size: cover;
-    height: 100vh;
-    z-index: 1;
-    position: relative;
-}
-
 .navbarWrapper{
     height: 7.5rem;
     width: 100%;
@@ -16,7 +7,8 @@
     transition: all;
     position: fixed;
     max-height: 7.5rem;
-    background-color: #d3e3fc;
+    /*background-color: #d3e3fc;*/
+    background-color: #eeeff1;
     box-shadow: 0 0.3rem 0.7rem rgba(0, 0, 0, 0.6);
 }
 
@@ -109,6 +101,7 @@
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 100;
+    letter-spacing: 1px;
 }
 
 .link {

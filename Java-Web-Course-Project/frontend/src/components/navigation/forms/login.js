@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import styles from "./forms.module.css"
 import {Link} from 'react-router-dom';
+import Home from "../../home/home";
 
 class LoginForm extends Component {
     render() {

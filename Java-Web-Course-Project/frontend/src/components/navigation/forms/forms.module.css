@@ -1,20 +1,18 @@
 
 form {
     position: absolute;
-    top: 47%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 50rem;
-    width: 60rem;
-    background-color: transparent;
-    margin-top: 6rem;
+    width: 50rem;
+    background-color: rgba(145,145, 145, .6);
+    margin-top: 4rem;
     text-align: center;
-    /*box-shadow: 0 1rem 2rem black;*/
-    color: #777777;
-    z-index: 6;
+    color: white;
     animation: appear .3s ease-in;
-    border: 5px solid rgba(66, 134, 244, 0.6);
-    border-radius: 10px;
+    box-shadow: 0 1rem 2rem black;
+    /*clip-path: polygon(50% 0%, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 23%);*/
 
 }
 
@@ -26,6 +24,7 @@ form {
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 100;
+    letter-spacing: 2px;
 }
 
 .form input, .loginForm input {
@@ -34,12 +33,12 @@ form {
     border: none;
     background-color: white;
     /*box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);*/
-    border-radius: 0.5rem;
+    /*border-radius: 0.5rem;*/
 }
 
 .textPrimary {
     margin-bottom: 2rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     text-transform: uppercase;
     font-size: 3rem;
     font-weight: 100;
@@ -68,13 +67,14 @@ input[type=submit] {
     background-color: #ff6a69;
     cursor: pointer;
     color: #eeeeee;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+
     transition: all .2s ease-in;
     border: 0px;
 }
 
 input[type=submit]:hover {
     transform: translateY(-3px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.5);
 }
 
 input[type=submit]:active {
@@ -91,7 +91,9 @@ form a {
 
 .forgottenPass {
     margin-top: 2rem;
-    color: #777777;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
@@ -100,5 +102,5 @@ form a {
 }
 
 form input:focus {
-    outline: none;
+
 }

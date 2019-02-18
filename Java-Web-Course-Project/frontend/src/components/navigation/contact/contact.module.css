@@ -5,8 +5,8 @@
     left: 50%;
     transform: translate(-50% -50%);
     animation: appear .3s ease-in;
-    border: 5px solid rgba(66, 134, 244, 0.6);
-    border-radius: 10px;
+    border: 1px solid rgba(30, 32, 37, .2);
+    /*border-radius: 10px;*/
 }
 
 .infoBox {
@@ -23,8 +23,8 @@
     animation: moveInLeft .3s ease-in;
     background-color: transparent;
     padding-top: 2rem;
-    border: 5px solid rgba(66, 134, 244, 0.6);
-    border-radius: 10px;
+    border: 1px solid rgba(30, 32, 37, .2);
+    /*border-radius: 10px;*/
 }
 
 .infoBox h2{

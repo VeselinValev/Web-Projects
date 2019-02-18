@@ -18,7 +18,7 @@ class Contact extends Component {
                     <h2><FontAwesome name='fax'/> +35932666666</h2>
                     <h2><FontAwesome name='skype'/> +35932666666</h2>
                     <h2><FontAwesome name='envelope'/> tch.contact@gmail.com</h2>
-                    <h2><FontAwesome name='facebook'/> The company house Ltd.</h2>
+                    <h2><FontAwesome name='facebook'/> The project house Ltd.</h2>
                     <h2><FontAwesome name='home'/> bul. "SVOBODA" 65, 4002 Western Industrial Zone, Plovdiv</h2>
                 </div>
             </div>
