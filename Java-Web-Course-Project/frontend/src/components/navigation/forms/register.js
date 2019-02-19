@@ -1,43 +1,43 @@
 import React, {Component} from 'react';
-import styles from "./forms.module.css"
+import "./form.css";
 
 class RegisterForm extends Component {
     render() {
         return (
-            <div className={styles.form}>
-
+            <div className="registerForm">
                 <form>
-                    <h1 className={styles.textPrimary}>Register</h1>
+                    <div className="fieldWrapper">
                     <label>
-                        <div className={styles.field}>
-                            <h4 className={styles.textSecondary}>Your Name</h4>
+                        <div className="field">
+                            <h4 className="textSecondary">Your Name</h4>
                             <input type="text"/>
                         </div>
                     </label>
                     <label>
-                        <div className={styles.field}>
-                            <h4 className={styles.textSecondary}>Username</h4>
+                        <div className="field">
+                            <h4 className="textSecondary">Username</h4>
                             <input type="text"/>
                         </div>
                     </label>
                     <label>
-                        <div className={styles.field}>
-                            <h4 className={styles.textSecondary}>Email</h4>
+                        <div className="field">
+                            <h4 className="textSecondary">Email</h4>
                             <input type="email"/>
                         </div>
                     </label>
                     <label>
-                        <div className={styles.field}>
-                            <h4 className={styles.textSecondary}>Password</h4>
+                        <div className="field">
+                            <h4 className="textSecondary">Password</h4>
                             <input type="password"/>
                         </div>
                     </label>
                     <label>
-                        <div className={styles.field}>
-                            <h3 className={styles.textSecondary}>Confirm Password</h3>
+                        <div className="field">
+                            <h3 className="textSecondary">Confirm Password</h3>
                             <input type="password"/>
                         </div>
                     </label>
+                    </div>
                     <input type="submit" value="Register"/>
                 </form>
             </div>

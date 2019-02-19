@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import styles from "./style.module.css";
+import "./style.css";
 
 class Body extends Component {
     render() {
         return (
-            <div className={styles.mainContainer}>
+            <div className="mainContainer">
                 {this.props.children}
             </div>
         );

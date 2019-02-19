@@ -14,7 +14,7 @@ import Dashboard from "./hoc/dashboard";
 const Routes = () => {
     return (
         <div>
-            <Route exact path="/" component={Home}/>
+            <Route path="/" component={Home}/>
             <Route exact path="/register" component={RegisterForm}/>
             <Route exact path="/login" component={LoginForm}/>
             <Route exact path="/support" component={Support}/>

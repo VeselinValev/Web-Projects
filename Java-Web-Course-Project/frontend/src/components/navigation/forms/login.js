@@ -1,29 +1,29 @@
 import React, {Component} from 'react';
-import styles from "./forms.module.css"
 import {Link} from 'react-router-dom';
-import Home from "../../home/home";
+import "./form.css";
 
 class LoginForm extends Component {
     render() {
         return (
-            <div className={styles.loginForm}>
+            <div className="loginForm">
                 <form>
-                    <h1 className={styles.textPrimary}>Sign in</h1>
+                    <div className="fieldWrapper">
                     <label>
-                        <div className={styles.field}>
-                            <h4 className={styles.textSecondary}>Username</h4>
+                        <div className="field">
+                            <h4 className="textSecondary">Username</h4>
                             <input type="text"/>
                         </div>
                     </label>
                     <label>
-                        <div className={styles.field}>
-                            <h4 className={styles.textSecondary}>Password</h4>
+                        <div className="field">
+                            <h4 className="textSecondary">Password</h4>
                             <input type="password"/>
                         </div>
                     </label>
-                    <input type="submit" value="Sign in"/>
+                    </div>
+                    <input type="submit" value="Log in"/>
                     <Link to='/recovery'>
-                        <h4 className={styles.forgottenPass}>Forgotten password</h4>
+                        <h4 className="forgottenPass">Forgotten password</h4>
                     </Link>
                 </form>
             </div>
