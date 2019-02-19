@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import "./form.css";
+import InputField from "./inputField";
 
 class RegisterForm extends Component {
     render() {
@@ -7,38 +8,13 @@ class RegisterForm extends Component {
             <div className="registerForm">
                 <form>
                     <div className="fieldWrapper">
-                    <label>
-                        <div className="field">
-                            <h4 className="textSecondary">Your Name</h4>
-                            <input type="text"/>
-                        </div>
-                    </label>
-                    <label>
-                        <div className="field">
-                            <h4 className="textSecondary">Username</h4>
-                            <input type="text"/>
-                        </div>
-                    </label>
-                    <label>
-                        <div className="field">
-                            <h4 className="textSecondary">Email</h4>
-                            <input type="email"/>
-                        </div>
-                    </label>
-                    <label>
-                        <div className="field">
-                            <h4 className="textSecondary">Password</h4>
-                            <input type="password"/>
-                        </div>
-                    </label>
-                    <label>
-                        <div className="field">
-                            <h3 className="textSecondary">Confirm Password</h3>
-                            <input type="password"/>
-                        </div>
-                    </label>
+                        <InputField value="Your name" type="text"/>
+                        <InputField value="username" type="text"/>
+                        <InputField value="email" type="email"/>
+                        <InputField value="password" type="password"/>
+                        <InputField value="confirm password" type="password"/>
                     </div>
-                    <input type="submit" value="Register"/>
+                        <input type="submit" value="Register"/>
                 </form>
             </div>
         );

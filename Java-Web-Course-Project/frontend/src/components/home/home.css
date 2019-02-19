@@ -188,15 +188,14 @@
     color: #505050;
 }
 
-.textPrimary {
+.title h2 {
     font-size: 4rem;
     letter-spacing: 0.5rem;
 }
 
-.textSecondary {
+.title h4 {
     font-size: 2.5rem;
     letter-spacing: 1px;
-    animation: glow 1s ease-in-out infinite alternate;
 }
 
 .hex h3 {
@@ -241,18 +240,43 @@
     transform: rotate(25deg);
 }
 
+.headerWrapper {
+    position: relative;
+    width: 100%;
+    animation: moveTitle 0.5s ease-out;
+}
+
 .title {
     height: 15rem;
     width: 65rem;
     background-color: rgba(255, 255, 255, .6);
     clip-path: polygon(0 0, 100% 0, 70% 65%, 30% 65%);
-    margin-top: 1rem;
+}
+
+.titleBarInner {
+    position: absolute;
+    height: 5rem;
+    width: 36.4%;
+    background-color: rgba(255, 255, 255, .6);
+    margin-top: 2rem;
+}
+
+.titleBarInner1 {
+    clip-path: polygon(0 0, 79% 0, 100% 100%, 0% 100%);
+}
+
+.titleBarInner2 {
+    clip-path: polygon(21% 0, 100% 0, 100% 100%, 0% 100%);
+    left: 63.6%;
+}
+
+.titleBarOuter {
+    filter: drop-shadow(0 0.5rem 0.5rem black);
 }
 
 .titleOuter {
     display: inline-block;
     filter: drop-shadow(0 0.5rem 1rem black);
-    animation: moveTitle 0.5s ease-out;
 }
 
 .moveAwayTitle {

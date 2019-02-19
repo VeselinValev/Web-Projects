@@ -1,7 +1,5 @@
 .mainContainer {
     background-image:  url("../img/background-6.jpg");
-    /*background: radial-gradient( #f5f5f5, #ededed);*/
-    /*background: radial-gradient( #b0b0b0, white);*/
     background-size: cover;
     height: 100vh;
     z-index: 1;

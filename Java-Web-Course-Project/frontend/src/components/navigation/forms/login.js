@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import "./form.css";
+import InputField from "./register";
 
 class LoginForm extends Component {
     render() {
@@ -8,18 +9,8 @@ class LoginForm extends Component {
             <div className="loginForm">
                 <form>
                     <div className="fieldWrapper">
-                    <label>
-                        <div className="field">
-                            <h4 className="textSecondary">Username</h4>
-                            <input type="text"/>
-                        </div>
-                    </label>
-                    <label>
-                        <div className="field">
-                            <h4 className="textSecondary">Password</h4>
-                            <input type="password"/>
-                        </div>
-                    </label>
+                        <InputField value="username" type="text"/>
+                        <InputField value="password" type="password"/>
                     </div>
                     <input type="submit" value="Log in"/>
                     <Link to='/recovery'>
