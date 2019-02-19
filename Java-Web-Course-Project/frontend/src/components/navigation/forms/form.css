@@ -99,5 +99,8 @@ form a {
     left: 50.05%;
 }
 .fieldWrapper {
+     padding-top: 6rem;
+ }
+.fieldWrapperLogin {
     padding-top: 6rem;
 }

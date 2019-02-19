@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import "./form.css";
-import InputField from "./register";
+import InputField from "./inputField";
 
 class LoginForm extends Component {
     render() {
         return (
             <div className="loginForm">
                 <form>
-                    <div className="fieldWrapper">
-                        <InputField value="username" type="text"/>
+                    <div className="fieldWrapperLogin">
+                        <InputField type="text" value="username"/>
                         <InputField value="password" type="password"/>
                     </div>
                     <input type="submit" value="Log in"/>

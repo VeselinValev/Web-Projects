@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import "./header.css";
 
 class Header extends Component {
 
     render() {
         return (
-            <div className={this.props.class}>
+            <div className={"headerWrapper" + this.props.class}>
                 <div className="titleBarOuter">
                     <div className="titleBarInner titleBarInner1">
 
@@ -17,8 +18,8 @@ class Header extends Component {
                 </div>
                 <div className="titleOuter">
                     <div className="title">
-                        <h2 className="text textPrimary">The project house</h2>
-                        <h4 className="text textSecondary">a simple organizer</h4>
+                        <h2 className="text">The project house</h2>
+                        <h4 className="text">a simple organizer</h4>
                     </div>
                 </div>
             </div>

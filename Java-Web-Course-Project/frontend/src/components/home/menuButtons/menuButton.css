@@ -1,7 +1,20 @@
+.text {
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    color: #505050;
+}
+
 .hex {
     position: absolute;
     filter: drop-shadow(0 0.5rem 1rem black);
     transition: all .2s ease-in;
+}
+
+.hex h3 {
+    position: absolute;
+    letter-spacing: 1px;
+    font-size: 2rem;
 }
 
 .hex:hover {
@@ -12,6 +25,12 @@
     left: 50.5%;
     top: 18%;
     animation: moveHex1 0.5s ease-out;
+}
+
+.hex1 h3 {
+    top: 40%;
+    left: 25%;
+    transform: rotate(25deg);
 }
 
 .hex1:hover {
@@ -28,6 +47,12 @@
     animation: moveHex2 0.5s ease-out;
 }
 
+.hex2 h3 {
+    top: 40%;
+    left: 18%;
+    transform: rotate(-25deg);
+}
+
 .hex2:hover h3 {
     color: #f5b400;
 }
@@ -40,6 +65,12 @@
     left: 56.5%;
     top: 38%;
     animation: moveHex3 0.5s ease-out;
+}
+
+.hex3 h3 {
+    top: 40%;
+    left: 20%;
+    transform: rotate(90deg);
 }
 
 .hex3:hover {
@@ -56,6 +87,12 @@
     animation: moveHex4 0.5s ease-out;
 }
 
+.hex4 h3 {
+    top: 40%;
+    left: 18%;
+    transform: rotate(90deg);
+}
+
 .hex4:hover {
     filter: drop-shadow(0 1rem 2rem rgba(233, 245, 0, .7));
 }
@@ -68,6 +105,12 @@
     left: 50.5%;
     top: 58%;
     animation: moveHex5 0.5s ease-out;
+}
+
+.hex5 h3 {
+    top: 43%;
+    left: 15%;
+    transform: rotate(-25deg);
 }
 
 .hex5:hover {
@@ -86,6 +129,12 @@
 
 .hex6:hover {
     filter: drop-shadow(0 1rem 2rem rgba(72, 142, 11, 1));
+}
+
+.hex6 h3 {
+    top: 41%;
+    left: 8%;
+    transform: rotate(25deg);
 }
 
 .hex6:hover h3 {
@@ -143,158 +192,6 @@
     top: -108%;
     transform: rotate(-65deg);
     background: linear-gradient(to top, #aef471, #488e0b);
-}
-
-@keyframes moveHex1 {
-    0% {
-        transform: translateX(10rem) translateY(-10rem);
-    }
-}
-
-@keyframes moveHex2 {
-    0% {
-        transform: translateX(-10rem) translateY(-10rem);
-    }
-}
-
-@keyframes moveHex3 {
-    0% {
-        transform: translateX(10rem);
-    }
-}
-
-@keyframes moveHex4 {
-    0% {
-        transform: translateX(-10rem);
-    }
-}
-
-@keyframes moveHex5 {
-    0% {
-        transform: translateX(10rem) translateY(10rem);
-    }
-}
-
-@keyframes moveHex6 {
-    0% {
-        transform: translateX(-10rem) translateY(10rem);
-    }
-}
-
-.text {
-    text-transform: uppercase;
-    font-weight: 400;
-    text-align: center;
-    color: #505050;
-}
-
-.title h2 {
-    font-size: 4rem;
-    letter-spacing: 0.5rem;
-}
-
-.title h4 {
-    font-size: 2.5rem;
-    letter-spacing: 1px;
-}
-
-.hex h3 {
-    position: absolute;
-    letter-spacing: 1px;
-    font-size: 2rem;
-}
-
-.hex1 h3 {
-    top: 40%;
-    left: 25%;
-    transform: rotate(25deg);
-}
-
-.hex2 h3 {
-    top: 40%;
-    left: 18%;
-    transform: rotate(-25deg);
-}
-
-.hex3 h3 {
-    top: 40%;
-    left: 20%;
-    transform: rotate(90deg);
-}
-
-.hex4 h3 {
-    top: 40%;
-    left: 18%;
-    transform: rotate(90deg);
-}
-
-.hex5 h3 {
-    top: 43%;
-    left: 15%;
-    transform: rotate(-25deg);
-}
-
-.hex6 h3 {
-    top: 41%;
-    left: 8%;
-    transform: rotate(25deg);
-}
-
-.headerWrapper {
-    position: relative;
-    width: 100%;
-    animation: moveTitle 0.5s ease-out;
-}
-
-.title {
-    height: 15rem;
-    width: 65rem;
-    background-color: rgba(255, 255, 255, .6);
-    clip-path: polygon(0 0, 100% 0, 70% 65%, 30% 65%);
-}
-
-.titleBarInner {
-    position: absolute;
-    height: 5rem;
-    width: 36.4%;
-    background-color: rgba(255, 255, 255, .6);
-    margin-top: 2rem;
-}
-
-.titleBarInner1 {
-    clip-path: polygon(0 0, 79% 0, 100% 100%, 0% 100%);
-}
-
-.titleBarInner2 {
-    clip-path: polygon(21% 0, 100% 0, 100% 100%, 0% 100%);
-    left: 63.6%;
-}
-
-.titleBarOuter {
-    filter: drop-shadow(0 0.5rem 0.5rem black);
-}
-
-.titleOuter {
-    display: inline-block;
-    filter: drop-shadow(0 0.5rem 1rem black);
-}
-
-.moveAwayTitle {
-    animation-fill-mode: forwards;
-    animation-name: moveUpTitle;
-    animation-duration: 0.5s;
-}
-
-@keyframes moveUpTitle {
-    100% {
-        transform: translateY(-20rem);
-    }
-}
-
-@keyframes moveTitle {
-    0% {
-        transform: translateY(-10rem);
-    }
 }
 
 .active {
@@ -380,6 +277,42 @@
     -webkit-animation-name: moveAwayHex6;
 }
 
+@keyframes moveHex1 {
+    0% {
+        transform: translateX(10rem) translateY(-10rem);
+    }
+}
+
+@keyframes moveHex2 {
+    0% {
+        transform: translateX(-10rem) translateY(-10rem);
+    }
+}
+
+@keyframes moveHex3 {
+    0% {
+        transform: translateX(10rem);
+    }
+}
+
+@keyframes moveHex4 {
+    0% {
+        transform: translateX(-10rem);
+    }
+}
+
+@keyframes moveHex5 {
+    0% {
+        transform: translateX(10rem) translateY(10rem);
+    }
+}
+
+@keyframes moveHex6 {
+    0% {
+        transform: translateX(-10rem) translateY(10rem);
+    }
+}
+
 @-webkit-keyframes moveAwayHex1 {
     100% {
         -webkit-transform: translateX(11rem) translateY(-11rem);
@@ -415,3 +348,4 @@
         -webkit-transform: translateX(-11rem) translateY(11rem);
     }
 }
+
